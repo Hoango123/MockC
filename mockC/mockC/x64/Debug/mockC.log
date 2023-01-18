@@ -1,0 +1,5 @@
+﻿  Caro.cpp
+  mockC.cpp
+D:\Mock\mockC\mockC\mockC.cpp(20,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  mockC.vcxproj -> D:\Mock\mockC\x64\Debug\mockC.exe
