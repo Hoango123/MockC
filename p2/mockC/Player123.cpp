@@ -47,7 +47,7 @@ int Player123::GetDraw()
 
 int Player123::GetWinRate()
 {
-	return ((double)(win) / (double)(win + draw + match)) * 100;
+	return ((double)(win) / (double)(win + lose + draw)) * 100;
 }
 
 void Player123::IncreWin()

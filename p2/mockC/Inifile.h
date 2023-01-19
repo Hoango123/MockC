@@ -15,6 +15,7 @@ public:
 	static void searchPlayerByName(string name);
 	static void findPlayerSameRank(string name, int win, int lose);
 	static void eraseOldResult(string name);
+	static void updatCurrentResult(Player123* player);
 	Inifile();
 	~Inifile();
 };

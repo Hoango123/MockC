@@ -1,3 +1,3 @@
 ﻿  mockC.cpp
-D:\Mock\p2\mockC\mockC.cpp(71,50): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Mock\p2\mockC\mockC.cpp(78,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   mockC.vcxproj -> D:\Mock\p2\x64\Debug\mockC.exe

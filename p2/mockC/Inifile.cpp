@@ -143,6 +143,31 @@ void Inifile::eraseOldResult(string name)
 	rename("temp.ini", recordfile);
 }
 
+void Inifile::updatCurrentResult(Player123* player)
+{
+	if (!is_file_exist(recordfile))
+	{
+		createRecordFile();
+	}
+	string namePlayer; 
+	int numWin, numLose, numDraw;
+	ifstream fin;
+	fin.open(recordfile);
+	string charsLine;
+	while (!fin.eof())
+	{
+		getline(fin, charsLine);
+		fin >> namePlayer >> numWin >> numLose >> numDraw;
+		if (player->GetName() == namePlayer)
+		{
+			player->SetWin(numWin);
+			player->SetLose(numLose);
+			player->SetDraw(numDraw);
+		}
+	}
+	fin.close();
+}
+
 Inifile::Inifile()
 {
 }
